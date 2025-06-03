@@ -1,0 +1,7 @@
+http POST http://127.0.0.1:8000/gettoken/ username=user1 password=geekyshows
+
+ path('auth/',include("rest_framework.urls",namespace='rest_framework')),
+    path('gettoken/',obtain_auth_token),
+
+
+from rest_framework.authtoken.views import obtain_auth_token
